@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <div>
+            <p class="eyebrow">Assignment 1</p>
+            <h1>Request Form</h1>
+          </div>
+        </div>
+        <nav class="topnav" aria-label="Primary">
+          <a href="#overview">Overview</a>
+          <a href="#form">Form</a>
+          <a href="#grid">Gallery</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero card">
+          <div class="hero-copy">
+            <p class="eyebrow">Static HTML and CSS</p>
+            <h2>A simple, real-looking layout with a clean contact form.</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. This page shows a practical form layout with
+              flexbox, relative and absolute positioning, box model spacing, and a responsive grid.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#form">Open Form</a>
+              <a class="button button-secondary" href="#grid">View Gallery</a>
+            </div>
+            <div class="theme-strip" aria-label="Theme highlights">
+              <span>Warm accent</span>
+              <span>Readable text</span>
+              <span>Real layout</span>
+            </div>
+          </div>
+          <aside class="hero-aside">
+            <div class="metric-card accent relative-card">
+              <span class="floating-tag" style="color: #fff;">Positioned label</span>
+              <span>Page Type</span>
+              <strong>Contact / Request</strong>
+            </div>
+            <div class="metric-row">
+              <div class="metric-card">
+                <span>Layout</span>
+                <strong>Flexible</strong>
+              </div>
+              <div class="metric-card">
+                <span>Spacing</span>
+                <strong>Box Model</strong>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section id="overview" class="section card">
+          <div class="section-heading">
+            <p class="eyebrow">Overview</p>
+            <h3>Everything is arranged like a normal business form page.</h3>
+          </div>
+          <div class="feature-row">
+            <article class="feature-panel">
+              <h4>Clear structure</h4>
+              <p>
+                Labels sit above inputs, the spacing is consistent, and the form is easy to follow.
+              </p>
+            </article>
+            <article class="feature-panel highlight">
+              <h4>Simple spacing</h4>
+              <p>
+                Margins, padding, and light borders give the page a clean, familiar rhythm.
+              </p>
+            </article>
+            <article class="feature-panel">
+              <h4>Responsive layout</h4>
+              <p>
+                The sections adapt to smaller screens without breaking the flow of the content.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="form" class="section card form-section">
+          <div class="section-heading">
+            <p class="eyebrow">Form</p>
+            <h3>Send a basic request using the fields below.</h3>
+          </div>
+
+          <div class="form-layout">
+            <form class="request-form" action="#" method="post">
+              <div class="form-row two-column">
+                <label class="field">
+                  <span>Your name</span>
+                  <input type="text" name="name" placeholder="Ava Johnson" />
+                </label>
+                <label class="field">
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="ava@example.com" />
+                </label>
+              </div>
+
+              <div class="form-row two-column">
+                <label class="field">
+                  <span>Request type</span>
+                  <select name="project-type">
+                    <option>Landing page</option>
+                    <option>Portfolio site</option>
+                    <option>Business form</option>
+                    <option>General inquiry</option>
+                  </select>
+                </label>
+                <label class="field">
+                  <span>Phone</span>
+                  <input type="tel" name="phone" placeholder="(555) 123-4567" />
+                </label>
+              </div>
+
+              <fieldset class="fieldset">
+                <legend>Budget</legend>
+                <div class="radio-group">
+                  <label><input type="radio" name="budget" value="starter" /> Starter</label>
+                  <label><input type="radio" name="budget" value="standard" checked /> Standard</label>
+                  <label><input type="radio" name="budget" value="premium" /> Premium</label>
+                </div>
+              </fieldset>
+
+              <label class="field">
+                <span>Message</span>
+                <textarea name="message" rows="6" placeholder="Tell us what you need and what the page should include."></textarea>
+              </label>
+
+              <div class="form-row actions-row">
+                <label class="checkbox">
+                  <input type="checkbox" name="updates" checked />
+                  <span>Email me a copy of this request</span>
+                </label>
+                <button class="button button-primary submit-button" type="submit">Send Request</button>
+              </div>
+            </form>
+
+            <aside class="form-side card-note">
+              <h4>Form notes</h4>
+              <ul>
+                <li>Grouped fields keep the layout easy to scan.</li>
+                <li>Input spacing is based on the box model.</li>
+                <li>Radio and checkbox controls are placed clearly.</li>
+                <li>The form stacks neatly on smaller screens.</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section id="grid" class="section card">
+          <div class="section-heading">
+            <p class="eyebrow">Gallery</p>
+            <h3>A simple grid of supporting content blocks.</h3>
+          </div>
+          <div class="grid-layout">
+            <article class="grid-card large">
+              <h4>Wide card</h4>
+              <p>A wider block creates hierarchy and gives the page a natural starting point.</p>
+            </article>
+            <article class="grid-card">
+              <h4>Card one</h4>
+              <p>Useful for short supporting details.</p>
+            </article>
+            <article class="grid-card">
+              <h4>Card two</h4>
+              <p>Works well for brief messages or notes.</p>
+            </article>
+            <article class="grid-card">
+              <h4>Card three</h4>
+              <p>Padding and margins keep the content readable.</p>
+            </article>
+            <article class="grid-card accent-card">
+              <h4>Accent tile</h4>
+              <p>A small accent helps the page feel more finished.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>Static HTML and CSS practice page for flexbox, positioning, the box model, forms, and responsive grid.</p>
+      </footer>
+    </div>
+  </body>
+</html>
